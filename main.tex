@@ -1,0 +1,243 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Yathartha}{Joshi}{ \urlstyle{same}\href{http://yathartha22.github.io}{yathartha22.github.io} \\
+\href{mailto:yathartha32@gmail.com}{yathartha32@gmail.com} | +91 8126689890 | +91 9756058421
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Netaji Subhas \\University of Technology}
+\descript{M.Tech in Computer Science}
+\location{2019-21 | New Delhi, India}
+\location{CGPA: 7.8}
+\sectionsep
+
+\subsection{BTKIT, Dwarahat}
+\descript{Bachelor of Technology in Computer Science and Engineering}
+\location{2014-18 | Uttarakhand, India}
+\location{Percentage: 73.26}
+\sectionsep
+
+\subsection{Nirmala Convent \\Sr. Sec. School}
+\location{Grad. May 2014|  Uttarakhand, India}
+\location{Percentage: 92.80}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Facebook:// \href{https://www.facebook.com/yathartha.joshi.399}{\bf yathartha} \\
+Github:// \href{https://github.com/Yathartha22}{\bf yathartha22} \\
+LinkedIn://  \href{https://www.linkedin.com/in/yathartha-joshi-962701123}{\bf yatharthajoshi} \\
+Twitter://  \href{https://twitter.com/yatharthajoshi2}{\bf @yatharthajoshi2} \\
+GeeksForGeeks://  \href{https://auth.geeksforgeeks.org/user/YatharthaJoshi/}{\bf Yathartha-Joshi} \\
+StackoverFlow://  \href{https://stackoverflow.com/users/6446166/yathartha-joshi}{\bf Yathartha-Joshi} \\
+Hackerearth://  \href{https://www.hackerearth.com/@yathartha32}{\bf yathartha32} \\
+Hackerrank://  \href{https://www.hackerrank.com/yathartha}{\bf yathartha}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+C \textbullet{}   C++ \textbullet{} Python \textbullet{} Java
+\subsection{Operating Systems}
+Linux \textbullet{} Windows
+\subsection{Web/Database Based \\ Technologies}
+HTML \textbullet{} CSS \textbullet{} JavaScript \\
+\textbullet{} Php \textbullet{} MySQL
+\subsection{Tools and Framework}
+Django \textbullet{} Bootstrap  \textbullet{} Git \\
+\textbullet{} pandas \textbullet{} scikit-learn \\
+\textbullet{} numpy \textbullet{} matplotlib \\
+\textbullet{} nltk
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Google Summer of Code 2019 | Mentor}
+\descript{| Mentor for SymPy Project}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Mentor for the development of solvers in SymPy
+\item Mentor for the development of Physics module in SymPy
+\href{https://summerofcode.withgoogle.com/archive/2019/projects/5351176374059008/}{[1]}
+\href{https://summerofcode.withgoogle.com/archive/2019/projects/4722757948932096/}{[2]}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Google Summer of Code 2018 | Student}
+\descript{| SymPy }
+\location{May 2018 – August 2018}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Improved Mathematical robustness of new solvers module.
+\item Implemented Transcendental Equation solver for solvers module
+\item Set Theory, Linear Algebra
+\href{https://summerofcode.withgoogle.com/archive/2018/projects/6261947964063744/}{[1]}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{KiloByte Technologies}
+\descript{| Python/Django Intern |}
+\location{June 2017 – July 2017 | Vaishali, India}
+\begin{tightemize}
+\item Worked on creating scripts for scrapping data. Also had a learning exprience in creating a Blogging application entirely
+in Django.
+\href{https://github.com/Yathartha22/farcon_image_scrapper}{[1]}
+\href{https://github.com/Yathartha22/quotesBot}{[2]}
+\href{https://github.com/Yathartha22/nasa}{[3]}
+\href{https://github.com/Yathartha22/myblog}{[4]}
+\end{tightemize}
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{Job Recommender System}
+\location{| March 2020 - Present}
+Currently working on creating a recommender system that will suggest 3-4 job profiles as per the candidate's resume.
+\sectionsep
+
+\runsubsection{Handwritten Mathematical Expression Regonition}
+\location{| March 2020 - Present}
+Currently working on designing a system that would take an image of a handwritten mathematical expression as input
+and would recognise the type of expression.
+\sectionsep
+
+\runsubsection{Notification Application for Colleges}
+\descript{| Backend Developer}
+Worked with another teammate on creating an Android application for creating, publishing and viewing notifications related to college.
+\href{https://github.com/Yathartha22/notices-api}{[1]}
+\href{https://drive.google.com/file/d/0B5EALEdIC0ktZ1JQRUhCdjZ1Z1NxSkVHT3Mwb3Rab3JtRmQ0/view?usp=sharing}{[2]}
+\sectionsep
+
+\runsubsection{ColoredCow BootCamp} \\
+Attended a Bootcamp organised by ColoredCow, where I worked on developing a simple Php application considering the phases of
+Software Development Life Cycle.
+\href{https://github.com/Yathartha22/codetrek}{[1]}
+\href{https://drive.google.com/file/d/0B5EALEdIC0ktY2thRjhxbUtrU1FDWERfYnR3aEd3QVZyVzVr/view?usp=sharing}{[2]}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2019	    & Graduate Aptitude test (GATE) qualified\\
+2017		& \href{https://drive.google.com/file/d/0B5EALEdIC0ktNFRBOWhNZk4wcTdnY253bnJNQVY0dmZCRkEw/view?usp=sharing}{AIR 14 in IEEE Xtreme 11.0}\\
+2016		& \href{https://drive.google.com/file/d/0B5EALEdIC0ktNFRBOWhNZk4wcTdnY253bnJNQVY0dmZCRkEw/view?usp=sharing}{AIR 22 in IEEE Xtreme 10.0}\\
+2016		& Qualified Google Code Jam Qualifiers.\\
+2013	 	& Head Boy of the school.
+
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications} 
+% \renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
